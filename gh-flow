@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-VERSION="0.2.0"
+VERSION="0.3.0"
 
 version() {
   echo $VERSION
@@ -229,8 +229,8 @@ elif [ $1 == "release" ] ;then
     exit 1
   fi
 
-elif [ $1 == "help" ] ;then
-  help
+elif [ $1 == "init" ] ;then
+  flow_init
   exit 0
 else
   help
